@@ -1,0 +1,11 @@
+﻿.masonryGallery {
+  .masonryGallery__tagContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 28px;
+    border: 2px solid #673de4;
+  }
+}

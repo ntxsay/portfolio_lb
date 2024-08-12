@@ -1,0 +1,121 @@
+﻿html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: calc(100% - 40px);
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  z-index: 999;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 10px 0;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr auto;
+  }
+
+  .header__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 4px;
+      font-family: Montserrat, sans-serif;
+      font-size: 20px;
+      font-weight: normal;
+      color: rgb(134, 142, 150);
+      text-decoration: none;
+    }
+  }
+
+  h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    font-weight: normal;
+    color: rgb(0, 87, 225);
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-end;
+    gap: 20px;
+
+    ul {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 20px;
+      list-style: none;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
+
+      li {
+        color: rgb(0, 87, 225);
+
+        a {
+          color: rgb(0, 87, 225);
+          text-decoration: none;
+          font-family: Montserrat, sans-serif;
+          font-size: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.documentSection {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px 20px 20px;
+}
+
+.documentSection__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 80px;
+
+}
+
+.documentSection__description {
+  color: rgb(134, 142, 150);
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+
+  @media (max-width: 768px){
+    font-size: 18px;
+  }
+}

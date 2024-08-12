@@ -1,0 +1,37 @@
+﻿.tagButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 28px;
+  background-color: transparent;
+  color: #673de4;
+  cursor: pointer;
+  
+  &:hover,
+  &:focus {
+    background-color: rgba(103, 61, 228, 0.5);
+    color: white;
+    transition: 0.3s;
+  }
+  
+  &.active {
+    background-color: #673de4;
+    color: white;
+    transition: 0.3s;
+  }
+  
+  img {
+    height: 24px;
+    width: auto;
+  }
+  
+  span {
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}

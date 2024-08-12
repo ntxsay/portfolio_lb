@@ -1,0 +1,152 @@
+﻿[
+  {
+    "id": 1,
+    "name": "Développement web",
+    "description": "Développement du front-end et du back-end d'un site web.",
+    "icon": "file-type-html.svg",
+    "iconAlt": "Compétence : création de pages Web avec HTML 5",
+    "skillContainerName": "Langages et frameworks",
+    "skills": [
+      {
+        "id": 1,
+        "name": "HTML",
+        "icon": "file-type-html.svg",
+        "iconAlt": "Compétence : création de pages Web avec HTML 5"
+      },
+      {
+        "id": 2,
+        "name": "CSS",
+        "icon": "file-type-css.svg",
+        "iconAlt": "Compétence : mise en forme de pages Web avec CSS"
+      },
+      {
+        "id": 3,
+        "name": "SCSS",
+        "icon": "file-type-scss2.svg",
+        "iconAlt": "Compétence : mise en forme de pages Web avec scss"
+      },
+      {
+        "id": 4,
+        "name": "JavaScript",
+        "icon": "javascript-js.svg",
+        "iconAlt": "Compétence : création de page Web dynamique avec JavaScript"
+      },
+      {
+        "id": 5,
+        "name": "React",
+        "icon": "react.svg",
+        "iconAlt": "Compétence : création de page Web dynamique avec React"
+      },
+      {
+        "id": 6,
+        "name": "Node.js",
+        "icon": "node-js.svg",
+        "iconAlt": "Compétence : création de projets backend avec Node.js et Express"
+      },
+      {
+        "id": 7,
+        "name": "MongoDB",
+        "icon": "mongodb-original-wordmark.svg",
+        "iconAlt": "Compétence : création de bases de données avec MongoDB"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Développement logiciel",
+    "description": "Développement d'applications de bureau et mobile",
+    "icon": "WinUI_Icon.svg",
+    "iconAlt": "Développment d'applications de bureau avec C#",
+    "skillContainerName": "Langages et frameworks",
+    "skills": [
+      {
+        "id": 1,
+        "name": "C#",
+        "icon": "c-sharp-c.svg",
+        "iconAlt": "Compétence : création de projets d'application .NET (Windows Forms, WPF, UWP, WinUI, .NET MAUI)avec C#"
+      },
+      {
+        "id": 2,
+        "name": "WinForms",
+        "icon": "microsoft-net-logo-svg-vector.svg",
+        "iconAlt": "Compétence : création d'applications de bureau avec Windows Forms et C#"
+      },
+      {
+        "id": 3,
+        "name": "WPF",
+        "icon": "microsoft-net.svg",
+        "iconAlt": "Compétence : création d'applications de bureau avec WPF et C#"
+      },
+      {
+        "id": 4,
+        "name": "UWP",
+        "icon": "WinUI_Icon.svg",
+        "iconAlt": "Compétence : création d'applications de bureau avec UWP et C#"
+      },
+      {
+        "id": 5,
+        "name": "WinUI",
+        "icon": "WinUI_Icon.svg",
+        "iconAlt": "Compétence : création d'applications de bureau avec WinUI et C#"
+      },
+      {
+        "id": 6,
+        "name": ".NET MAUI",
+        "icon": "maui.webp",
+        "iconAlt": "Compétence : création d'applications de bureau avec .NET MAUI et C#"
+      },
+      {
+        "id": 7,
+        "name": "ASP.NET Core",
+        "icon": "NET_Core_Logo.svg",
+        "iconAlt": "Compétence : création d'application Web API avec ASP.NET Core et C#"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Outils",
+    "description": "Outils nécessaires à la réalisation de mes projets",
+    "icon": "JetBrains_Rider_Icon.svg",
+    "iconAlt": "Développment d'applications de bureau avec C#",
+    "skillContainerName": "Logiciels",
+    "skills": [
+      {
+        "id": 1,
+        "name": "Visual Studio",
+        "icon": "visual-studio.svg",
+        "iconAlt": "Utilisation de Visual Studio"
+      },
+      {
+        "id": 2,
+        "name": "VS Code",
+        "icon": "visual-studio-code.svg",
+        "iconAlt": "Utilisation de Visual Studio Code"
+      },
+      {
+        "id": 3,
+        "name": "JetBrains Rider",
+        "icon": "JetBrains_Rider_Icon.svg",
+        "iconAlt": "Utilisation de JetBrains Rider"
+      },
+      {
+        "id": 4,
+        "name": "Git",
+        "icon": "git.svg",
+        "iconAlt": "Utilisation de Git"
+      },
+      {
+        "id": 5,
+        "name": "GitHub",
+        "icon": "github.svg",
+        "iconAlt": "Utilisation de GitHub"
+      },
+      {
+        "id": 6,
+        "name": "DBeaver",
+        "icon": "DBeaver_logo.svg",
+        "iconAlt": "Utilisation de DBeaver"
+      }
+    ]
+  }
+]

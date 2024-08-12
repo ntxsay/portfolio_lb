@@ -1,0 +1,116 @@
+﻿[
+  {
+    "projectName": "Projet Library",
+    "status": "Terminé",
+    "description": "Application de gestion de bibliothèque de livres.",
+    "supportedPlatforms": [
+      "Windows 10 version 2004 et supérieur"
+    ],
+    "languages": [
+      "C#",
+      "XAML"
+    ],
+    "framework": "UWP",
+    "icon": "WinUI_Icon.svg",
+    "iconAlt": "WinUI",
+    "medias": [
+      "src/assets/projects/sitebuild.webp",
+      "src/assets/projects/sitebuild.webp"
+    ],
+    "links": [
+      {
+        "name": "Projet sur GitHub",
+        "url": "https://github.com/ntxsay/ProjetLibrary"
+      },
+      {
+        "name": "Projet sur CodePen",
+        "url": "https://codepen.io/ntxsay/pen/gOwoVv"
+      }
+    ]
+  },
+  {
+    "projectName": "Projet RCP",
+    "status": "Terminé",
+    "description": "Application de gestion de paroles de chants.",
+    "supportedPlatforms": [
+      "Windows 7 et supérieur"
+    ],
+    "languages": [
+      "C#",
+      "XAML"
+    ],
+    "framework": "WPF",
+    "icon": "microsoft-net.svg",
+    "iconAlt": "WPF",
+    "medias": [
+      "src/assets/projects/sitebuild.webp",
+      "src/assets/projects/sitebuild.webp"
+    ],
+    "links": []
+  },
+  {
+    "projectName": "Projet H&L",
+    "status": "Terminé",
+    "description": "Application de gestion de paroles de chants religieux.",
+    "supportedPlatforms": [
+      "Windows 7 et supérieur"
+    ],
+    "languages": [
+      "C#"
+    ],
+    "framework": "Windows Forms",
+    "icon": "microsoft-net-logo-svg-vector.svg",
+    "iconAlt": "Windows Forms",
+    "medias": [
+      "src/assets/projects/sitebuild.webp",
+      "src/assets/projects/sitebuild.webp"
+    ],
+    "links": []
+  },
+  {
+    "projectName": "Projets Avalonia",
+    "status": "Terminé",
+    "description": "Création d'UI pour macOS",
+    "supportedPlatforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "languages": [
+      "C#",
+      "AXAML"
+    ],
+    "framework": "Avalonia UI",
+    "icon": "avalonia.svg",
+    "iconAlt": "Avalonia",
+    "medias": [
+      "src/assets/projects/sitebuild.webp",
+      "src/assets/projects/sitebuild.webp"
+    ],
+    "links": []
+  },
+  {
+    "projectName": "Projet ACP",
+    "status": "Terminé",
+    "description": "Application web développée pour un centre de formation permettant au secrétariat/accueil de celle-ci de créer et gérer les fiches accueil lorsqu'elle reçoit une personne.",
+    "supportedPlatforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "languages": [
+      "C#",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "framework": "Blazor WebAssembly",
+    "icon": "blazor-svgrepo-com.svg",
+    "iconAlt": "Blazor",
+    "medias": [
+      "src/assets/projects/sitebuild.webp",
+      "src/assets/projects/sitebuild.webp"
+    ],
+    "links": []
+  }
+]
