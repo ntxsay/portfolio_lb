@@ -11,6 +11,11 @@
   color: #673de4;
   cursor: pointer;
   
+  @media (max-width: 768px) {
+    width: 100%;
+    border: 1px solid #673de4;
+  }
+  
   &:hover,
   &:focus {
     background-color: rgba(103, 61, 228, 0.5);

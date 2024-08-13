@@ -1,21 +1,30 @@
 ﻿[
   {
-    "projectName": "Projet Library",
+    "id": 1,
+    "projectName": "Projet Kasa",
+    "category": "Développement web",
     "status": "Terminé",
-    "description": "Application de gestion de bibliothèque de livres.",
+    "description": "Application web de gestion de location immobilière dans un cadre pédagogique.",
     "supportedPlatforms": [
-      "Windows 10 version 2004 et supérieur"
+      "Chrome",
+      "Firefox",
+      "Edge",
+      "Safari"
     ],
     "languages": [
-      "C#",
-      "XAML"
+      "HTML",
+      "CSS",
+      "TypeScript"
     ],
-    "framework": "UWP",
-    "icon": "WinUI_Icon.svg",
-    "iconAlt": "WinUI",
+    "framework": "React",
+    "icon": "react.svg",
+    "iconAlt": "React JS",
+    "iconBackgroundColor": "white",
     "medias": [
-      "src/assets/projects/sitebuild.webp",
-      "src/assets/projects/sitebuild.webp"
+      "src/assets/projects/React/kasa_1.png",
+      "src/assets/projects/React/kasa_2.png",
+      "src/assets/projects/React/kasa_3.png",
+      "src/assets/projects/React/kasa_4.png"
     ],
     "links": [
       {
@@ -29,7 +38,77 @@
     ]
   },
   {
+    "id": 2,
+    "projectName": "Projet Booki",
+    "category": "Développement web",
+    "status": "Terminé",
+    "description": "Développement de la page d'accueil d'une agence de voyage dans un cadre pédagogique.",
+    "supportedPlatforms": [
+      "Chrome",
+      "Firefox",
+      "Edge",
+      "Safari"
+    ],
+    "languages": [
+      "HTML",
+      "CSS"
+    ],
+    "framework": "Aucun",
+    "icon": "file-type-html.svg",
+    "iconAlt": "Html 5",
+    "iconBackgroundColor": "white",
+    "medias": [
+      "src/assets/projects/Web/booki_3.png",
+      "src/assets/projects/Web/booki_1.png",
+      "src/assets/projects/Web/booki_2.png"
+    ],
+    "links": [
+      {
+        "name": "Projet sur GitHub",
+        "url": "https://github.com/ntxsay/ProjetBooki"
+      },
+      {
+        "name": "Projet sur CodePen",
+        "url": "https://codepen.io/ntxsay/pen/gOwoVv"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "projectName": "Projet Library",
+    "category": "Développement logiciel",
+    "status": "Terminé",
+    "description": "Application de gestion de bibliothèque de livres.",
+    "supportedPlatforms": [
+      "Windows 10 version 2004 et supérieur"
+    ],
+    "languages": [
+      "C#",
+      "XAML"
+    ],
+    "framework": "UWP",
+    "icon": "WinUI_Icon.svg",
+    "iconAlt": "WinUI",
+    "iconBackgroundColor": "default",
+    "medias": [
+      "src/assets/projects/UWP/projectLibraty_2022.png",
+      "src/assets/projects/UWP/Rostaltheque_presentation_comp.mp4"
+    ],
+    "links": [
+      {
+        "name": "Projet sur GitHub",
+        "url": "https://github.com/ntxsay/ProjetLibrary"
+      },
+      {
+        "name": "Projet sur CodePen",
+        "url": "https://codepen.io/ntxsay/pen/gOwoVv"
+      }
+    ]
+  },
+  {
+    "id": 4,
     "projectName": "Projet RCP",
+    "category": "Développement logiciel",
     "status": "Terminé",
     "description": "Application de gestion de paroles de chants.",
     "supportedPlatforms": [
@@ -42,14 +121,18 @@
     "framework": "WPF",
     "icon": "microsoft-net.svg",
     "iconAlt": "WPF",
+    "iconBackgroundColor": "white",
     "medias": [
-      "src/assets/projects/sitebuild.webp",
-      "src/assets/projects/sitebuild.webp"
+      "src/assets/projects/WPF/2017-09-28_173945.png",
+      "src/assets/projects/WPF/Capture_d’ecran_(54).png",
+      "src/assets/projects/WPF/Capture_d’ecran_(58).png"
     ],
     "links": []
   },
   {
+    "id": 5,
     "projectName": "Projet H&L",
+    "category": "Développement logiciel",
     "status": "Terminé",
     "description": "Application de gestion de paroles de chants religieux.",
     "supportedPlatforms": [
@@ -61,14 +144,17 @@
     "framework": "Windows Forms",
     "icon": "microsoft-net-logo-svg-vector.svg",
     "iconAlt": "Windows Forms",
+    "iconBackgroundColor": "white",
     "medias": [
-      "src/assets/projects/sitebuild.webp",
-      "src/assets/projects/sitebuild.webp"
+      "src/assets/projects/WindowsForms/2017-03-21_070637.png",
+      "src/assets/projects/WindowsForms/RCP_Search1.mp4"
     ],
     "links": []
   },
   {
+    "id": 6,
     "projectName": "Projets Avalonia",
+    "category": "Développement logiciel",
     "status": "Terminé",
     "description": "Création d'UI pour macOS",
     "supportedPlatforms": [
@@ -83,14 +169,17 @@
     "framework": "Avalonia UI",
     "icon": "avalonia.svg",
     "iconAlt": "Avalonia",
+    "iconBackgroundColor": "default",
     "medias": [
-      "src/assets/projects/sitebuild.webp",
-      "src/assets/projects/sitebuild.webp"
+      "src/assets/projects/AvaloniaUI/avalonia-afd.png",
+      "src/assets/projects/AvaloniaUI/06_avalonia-afd.mp4"
     ],
     "links": []
   },
   {
+    "id": 7,
     "projectName": "Projet ACP",
+    "category": "Développement logiciel",
     "status": "Terminé",
     "description": "Application web développée pour un centre de formation permettant au secrétariat/accueil de celle-ci de créer et gérer les fiches accueil lorsqu'elle reçoit une personne.",
     "supportedPlatforms": [
@@ -107,9 +196,9 @@
     "framework": "Blazor WebAssembly",
     "icon": "blazor-svgrepo-com.svg",
     "iconAlt": "Blazor",
+    "iconBackgroundColor": "white",
     "medias": [
-      "src/assets/projects/sitebuild.webp",
-      "src/assets/projects/sitebuild.webp"
+      "src/assets/projects/Blazor/Blazor-floud.png"
     ],
     "links": []
   }

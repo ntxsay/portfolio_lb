@@ -1,0 +1,205 @@
+﻿.Overlay {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Modal {
+  position: relative;
+  width: 76vw;
+  max-height: 90vh;
+  aspect-ratio: 4/3;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(155, 161, 173, 0.2) 3px 5px 15px 0, rgba(230, 234, 238, 0.2) -3px 3px 3px 3px;
+  padding: 20px 40px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 40px;
+  
+  @media screen and (max-width: 1440px) {
+    width: 90vw;
+  }
+  
+  @media (orientation: portrait) and (max-height: 1024px) {
+    height: 90vh;
+    aspect-ratio: 9/18;
+  }
+
+    .Modal__closeButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    
+    &:hover {
+      color: orangered;
+    }
+  }
+  
+  .Modal__titleBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    height: 40px;
+    background-color: white;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+
+    h2 {
+      font-family: Montserrat, sans-serif;
+      font-size: 34px;
+      font-weight: 600;
+      color: rgb(0, 87, 225);
+      margin: 0;
+    }
+  }
+  
+  .Modal__contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    overflow: auto;
+
+    .Modal__content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: stretch;
+      justify-content: space-between;
+      
+      @media (max-width: 1024px) {
+        grid-template-columns: none;
+        grid-template-rows: auto auto;
+        justify-content: start;
+        gap: 20px;
+      }
+
+      .Modal__content__imageContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 20px;
+
+        img {
+          width: 100%;
+          border-radius: 10px;
+          object-fit: cover;
+        }
+      }
+
+      .Modal__content__description {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 20px;
+
+        .projectItemGroup {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          gap: 5px;
+
+          &.projectStatus,
+          &.projectCategory,
+          &.projectFramework {
+            flex-direction: row;
+          }
+
+          h3, p, span {
+            font-family: Montserrat, sans-serif;
+            font-size: 21px;
+            line-height: 1.5;
+            color: black;
+            margin: 0;
+
+            @media (max-width: 768px) {
+              font-size: 16px;
+            }
+            
+            @media (min-width: 769px)  and (max-width: 1024px) {
+              font-size: 18px;
+            }
+          }
+
+          h3 {
+            font-weight: 600;
+          }
+          
+          p, span {
+            font-weight: normal;
+            color: rgb(134, 142, 150);
+          }
+
+          ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+
+            li {
+              font-family: Montserrat, sans-serif;
+              background-color: #fff;
+              border: 1.5px solid #7171d6;
+              color: #7171d6;
+              padding: 5px 16px 4px 16px;
+              margin-right: 6px;
+              border-radius: 15px;
+              font-size: 16px;
+              font-weight: 500;
+              
+              a { 
+                color: #7171d6;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+  .Modal__BottomButtonBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    height: 40px;
+    background-color: white;
+    padding-top: 20px;
+    border-top: 1px solid #e5e5e5;
+  
+    button {
+      background: linear-gradient(#fff, #eee);
+      padding: 8px 10px;
+      margin: 0 1px;
+      border: 1px solid #e0e0e0;
+      border-bottom: 1px solid #cacaca;
+      border-radius: 1px;
+      color: #7a869c;
+      font-size: 18px;
+      font-family: Montserrat, sans-serif;
+      font-weight: 400;
+      line-height: 16px;
+    }
+  }
+}

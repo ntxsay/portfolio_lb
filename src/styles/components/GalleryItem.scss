@@ -1,0 +1,124 @@
+﻿.galleryItem {
+  padding: 10px 10px 10px 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-sizing: border-box;
+  position: relative;
+  box-shadow: rgba(155, 161, 173, 0.2) 3px 5px 15px 0, rgba(230, 234, 238, 0.2) -3px 3px 3px 3px;
+  overflow: hidden;
+  margin: 0;
+  width: 26%;
+  aspect-ratio: 16/9;
+  
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  
+  .galleryItem__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: height 0.3s ease-in-out;
+    
+    &:hover {
+      height: 100%;
+      transition: height 0.3s ease-in-out;
+    }
+    
+    .galleryItem__overlay__logo {
+      width: 80px;
+      height: 80px;
+      text-align: center;
+      border-radius: 50%;
+      background-color: #673de4;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      
+      &.--default {
+        background-color: #673de4;
+      }
+      
+      &.--white {
+        background-color: white;
+      }
+
+      img {
+        height: 60%;
+      }
+    }
+
+    .galleryItem__caption {
+      color: white;
+      font-family: Montserrat, sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .galleryItem__buttonContainer {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      
+      .galleryItem__button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        border-radius: 18px;
+        border: none;
+        padding: 8px 14px;
+        cursor: pointer;
+        font-family: Montserrat, sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+
+        &.--medias {
+          background-color: #0057e1;
+          color: white;
+        }
+        
+        &.--description {
+          background-color: #007acc;
+          color: white;
+        }
+        
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.9);
+        }
+      }
+    }
+  }
+  
+  &:hover {
+    .galleryItem__overlay {
+      height: 100%;
+      transition: height 0.3s ease-in-out;
+    }
+    
+  }
+  
+}

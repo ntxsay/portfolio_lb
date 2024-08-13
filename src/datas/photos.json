@@ -1,0 +1,112 @@
+﻿[
+    {
+        "src": "src/assets/projects/AvaloniaUI/avalonia_acp_suivi_2021.png",
+        "width": 3584,
+        "height": 2240,
+        "key": "AvaloniaUI2",
+        "alt": "AvaloniaUI",
+        "title": "AvaloniaUI",
+        "href": "https://github.com/AvaloniaUI/Avalonia",
+        "label": "AvaloniaUI",
+        "srcSet": []
+      },
+    {
+        "src": "src/assets/projects/AvaloniaUI/avalonia_acp_suivi_2021_2.png",
+        "width": 3584,
+        "height": 2240,
+        "key": "AvaloniaUI3",
+        "alt": "AvaloniaUI",
+        "title": "AvaloniaUI",
+        "href": "https://github.com/AvaloniaUI/Avalonia",
+        "label": "AvaloniaUI",
+        "srcSet": []
+      },
+    {
+        "src": "src/assets/projects/AvaloniaUI/avalonia_acp_suivi_2021_3.png",
+        "width": 3584,
+        "height": 2240,
+        "key": "AvaloniaUI4",
+        "alt": "AvaloniaUI",
+        "title": "AvaloniaUI",
+        "href": "https://github.com/AvaloniaUI/Avalonia",
+        "label": "AvaloniaUI",
+        "srcSet": []
+      },
+    {
+        "src": "src/assets/projects/AvaloniaUI/avalonia-afd.png",
+        "width": 1920,
+        "height": 1080,
+        "key": "AvaloniaUI5",
+        "alt": "AvaloniaUI",
+        "title": "AvaloniaUI",
+        "href": "https://github.com/AvaloniaUI/Avalonia",
+        "label": "AvaloniaUI",
+        "srcSet": []
+      },
+    {
+        "src": "src/assets/projects/AvaloniaUI/avalonia_acp_student_2020.png",
+        "width": 3584,
+        "height": 2240,
+        "key": "AvaloniaUI6",
+        "alt": "AvaloniaUI",
+        "title": "AvaloniaUI",
+        "href": "https://github.com/AvaloniaUI/Avalonia",
+        "label": "AvaloniaUI",
+        "srcSet": []
+      },
+    {
+        "src": "src/assets/projects/WPF/2017-09-28_173945.png",
+        "width": 1920,
+        "height": 1040,
+        "key": "WPF",
+        "alt": "WPF",
+        "title": "WPF",
+        "href": "https://github.com/AvaloniaUI/Avalonia",
+        "label": "AvaloniaUI",
+        "srcSet": []
+      },
+    {
+        "src": "src/assets/projects/WPF/Capture_d’ecran_(54).png",
+        "width": 1920,
+        "height": 1080,
+        "key": "WPF2",
+        "alt": "WPF",
+        "title": "WPF",
+        "href": "https://github.com/AvaloniaUI/Avalonia",
+        "label": "AvaloniaUI",
+        "srcSet": []
+      },
+    {
+        "src": "src/assets/projects/WPF/Capture_d’ecran_(58).png",
+        "width": 1920,
+        "height": 1080,
+        "key": "WPF3",
+        "alt": "WPF",
+        "title": "WPF",
+        "href": "https://github.com/AvaloniaUI/Avalonia",
+        "label": "AvaloniaUI",
+        "srcSet": []
+      },
+    {
+        "src": "src/assets/projects/WPF/wpf floued.png",
+        "width": 1920,
+        "height": 1080,
+        "key": "WPF4",
+        "alt": "WPF",
+        "title": "WPF",
+        "href": "https://github.com/AvaloniaUI/Avalonia",
+        "label": "AvaloniaUI",
+        "srcSet": []
+    },
+    {
+        "src": "src/assets/projects/AvaloniaUI/06_avalonia-afd.mp4",
+        "width": 1920,
+        "height": 1080,
+        "key": "AvaloniaUI",
+        "alt": "AvaloniaUI",
+        "title": "AvaloniaUI",
+        "href": "https://github.com/AvaloniaUI/Avalonia",
+        "label": "AvaloniaUI",
+        "srcSet": []
+    }
+]

@@ -2,7 +2,6 @@
 import SkillCard from "../components/SkillCard.tsx";
 import MasonryGallery from "../components/MasonryGallery.tsx";
 import {ISkillSchema} from "../interfaces/ISkillSchema.tsx";
-//import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 const HomePage = () => {
     return (
         <>
@@ -90,7 +89,7 @@ const HomePage = () => {
                 </div>
             </section>
             <section id="projects" className="documentSection projects__section">
-                <div className="documentSection__content">
+                <div className="projects__content">
                     <div className="section__titleContainer">
                         <div className="codeTitleContainer">
                             <span className="code type">let</span>

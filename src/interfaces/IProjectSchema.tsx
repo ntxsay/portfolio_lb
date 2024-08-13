@@ -1,5 +1,7 @@
 ﻿export interface IProjectSchema {
+    id: number,
     projectName: string,
+    category: string,
     status: string,
     description: string,
     supportedPlatforms: string[],
@@ -7,6 +9,7 @@
     framework: string,
     icon: string | null,
     iconAlt: string | undefined,
+    iconBackgroundColor: string,
     medias: string[],
     links: IProjectLinkSchema[]
 }
