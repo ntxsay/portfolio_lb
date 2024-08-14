@@ -1,7 +1,10 @@
 ﻿import React, {useState} from "react";
+import {faCircleCheck} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const ContactForm = () => {
     const [errors, setErrors] = useState<string[]>([]);
+    const [successMessage, setSuccessMessage] = useState<string | null>(null);
     const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         const form = event.target as HTMLFormElement;
@@ -38,7 +41,6 @@ const ContactForm = () => {
             return;
         }
         const formData = new FormData(form);
-        //const formData = new FormData(event.target as HTMLFormElement);
 
         formData.append("access_key", "00e28f1c-8de5-4058-ad26-bc210f5d95fd");
 
@@ -55,7 +57,7 @@ const ContactForm = () => {
         });
         const result = await response.json();
         if (result.success) {
-            console.log(result);
+            setSuccessMessage("Votre message a bien été envoyé !");
         }
     }
     
@@ -83,6 +85,12 @@ const ContactForm = () => {
                 <label htmlFor="message">Message</label>
                 <textarea className="form__input" name="message" id="message" placeholder="Votre message"></textarea>
             </div>
+            {
+                successMessage && <div className="form__ResultContainer">
+                    <span>{successMessage}</span>
+                    <FontAwesomeIcon icon={faCircleCheck} />
+                </div>
+            }
             <ul className="form__errorContainer">
                 {
                     errors.map((error, index) => {
@@ -90,7 +98,9 @@ const ContactForm = () => {
                     })
                 }
             </ul>
-            <button className="form__button" type="submit">Envoyer</button>
+            {
+                successMessage ? null : <button className="form__button" type="submit">Envoyer</button>
+            }
         </form>
     );
 }

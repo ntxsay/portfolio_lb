@@ -21,9 +21,9 @@ const Layout = () => {
                 </div>
                 <nav>
                     <ul>
-                        <li><Link to="/#profile">Profil</Link></li>
-                        <li><Link to="/#projects">Projets</Link></li>
-                        <li><Link to="/#contact">Contact</Link></li>
+                        <li><Link to="#profile">Profil</Link></li>
+                        <li><Link to="#projects">Projets</Link></li>
+                        <li><Link to="#contact">Contact</Link></li>
                     </ul>
                     <MenuIcon isOpen={isMobileMenuOpen} onClick={toggleOpenMobileMenu}/>
                 </nav>
