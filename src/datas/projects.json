@@ -21,10 +21,10 @@
     "iconAlt": "React JS",
     "iconBackgroundColor": "white",
     "medias": [
-      "public/projects/React/kasa_1.png",
-      "public/projects/React/kasa_2.png",
-      "public/projects/React/kasa_3.png",
-      "public/projects/React/kasa_4.png"
+      "projects/React/kasa_1.png",
+      "projects/React/kasa_2.png",
+      "projects/React/kasa_3.png",
+      "projects/React/kasa_4.png"
     ],
     "links": [
       {
@@ -58,9 +58,9 @@
     "iconAlt": "Html 5",
     "iconBackgroundColor": "white",
     "medias": [
-      "public/projects/Web/booki_3.png",
-      "public/projects/Web/booki_1.png",
-      "public/projects/Web/booki_2.png"
+      "projects/Web/booki_3.png",
+      "projects/Web/booki_1.png",
+      "projects/Web/booki_2.png"
     ],
     "links": [
       {
@@ -91,8 +91,8 @@
     "iconAlt": "WinUI",
     "iconBackgroundColor": "default",
     "medias": [
-      "public/projects/UWP/projectLibraty_2022.png",
-      "public/projects/UWP/Rostaltheque_presentation_comp.mp4"
+      "projects/UWP/projectLibraty_2022.png",
+      "projects/UWP/Rostaltheque_presentation_comp.mp4"
     ],
     "links": [
       {
@@ -123,9 +123,9 @@
     "iconAlt": "WPF",
     "iconBackgroundColor": "white",
     "medias": [
-      "public/projects/WPF/2017-09-28_173945.png",
-      "public/projects/WPF/Capture_d’ecran_(54).png",
-      "public/projects/WPF/Capture_d’ecran_(58).png"
+      "projects/WPF/2017-09-28_173945.png",
+      "projects/WPF/Capture_d’ecran_(54).png",
+      "projects/WPF/Capture_d’ecran_(58).png"
     ],
     "links": []
   },
@@ -146,8 +146,8 @@
     "iconAlt": "Windows Forms",
     "iconBackgroundColor": "white",
     "medias": [
-      "public/projects/WindowsForms/2017-03-21_070637.png",
-      "public/projects/WindowsForms/RCP_Search1.mp4"
+      "projects/WindowsForms/2017-03-21_070637.png",
+      "projects/WindowsForms/RCP_Search1.mp4"
     ],
     "links": []
   },
@@ -171,8 +171,8 @@
     "iconAlt": "Avalonia",
     "iconBackgroundColor": "default",
     "medias": [
-      "public/projects/AvaloniaUI/avalonia-afd.png",
-      "public/projects/AvaloniaUI/06_avalonia-afd.mp4"
+      "projects/AvaloniaUI/avalonia-afd.png",
+      "projects/AvaloniaUI/06_avalonia-afd.mp4"
     ],
     "links": []
   },
@@ -198,7 +198,7 @@
     "iconAlt": "Blazor",
     "iconBackgroundColor": "white",
     "medias": [
-      "public/projects/Blazor/Blazor-floud.png"
+      "projects/Blazor/Blazor-floud.png"
     ],
     "links": []
   }

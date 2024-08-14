@@ -93,7 +93,7 @@ const Gallery = () => {
             <div className="galleryContainer__container">
                 {
                     sortedProjects.map((project:IProjectSchema, index) => {
-                        return <GalleryItem key={index} onMediasRequested={() => onMediasRequested(project.id)} onDescriptionRequested={() => onDescriptionRequested(project.id)} title={project.projectName} icon={`public/icons/${project.icon}`} iconBackgroundColor={project.iconBackgroundColor} imageFile={project.medias[0]} imageAlt={project.projectName}
+                        return <GalleryItem key={index} onMediasRequested={() => onMediasRequested(project.id)} onDescriptionRequested={() => onDescriptionRequested(project.id)} title={project.projectName} icon={`icons/${project.icon}`} iconBackgroundColor={project.iconBackgroundColor} imageFile={project.medias[0]} imageAlt={project.projectName}
                          hasMedias={project.medias.length > 0} hasDescription={project.description.length > 0}/>
                     })
                 }

@@ -9,7 +9,7 @@ const SkillCard: React.FC<SkillCardProps> = (prop) => {
     return (
         <article className="skillTheme" key={prop.skill.name}>
             <div className="skillTheme__header">
-                <img src={`public/icons/${prop.skill.icon}`} alt={prop.skill.iconAlt}/>
+                <img src={`icons/${prop.skill.icon}`} alt={prop.skill.iconAlt}/>
             </div>
             <h3 className="skillTheme__title">{prop.skill.name}</h3>
             <p className="skillTheme__description">{prop.skill.description}</p>
@@ -20,7 +20,7 @@ const SkillCard: React.FC<SkillCardProps> = (prop) => {
                         return <li key={skillContainer.id}>
                             <div className="skillTheme__skill"
                                  data-tooltip={skillContainer.iconAlt}>
-                                <img className="skillTheme__skill__icon" src={`public/icons/${skillContainer.icon}`}
+                                <img className="skillTheme__skill__icon" src={`icons/${skillContainer.icon}`}
                                      alt={skillContainer.iconAlt}/>
                                 <span>{skillContainer.name}</span>
                             </div>
