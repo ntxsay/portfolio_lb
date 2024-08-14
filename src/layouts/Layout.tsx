@@ -1,6 +1,15 @@
 ﻿import MobileMenu from "../components/MobileMenu";
-import {Outlet} from 'react-router-dom';
+import {Link, Outlet} from 'react-router-dom';
+import {useState} from "react";
+import MenuIcon from "../components/MenuIcon.tsx";
 const Layout = () => {
+    
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
+    
+    const toggleOpenMobileMenu = () => {
+        setIsMobileMenuOpen(!isMobileMenuOpen);
+    }
+    
     return (
         <>
             <header>
@@ -11,19 +20,15 @@ const Layout = () => {
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="#profile">Profil</a></li>
-                        <li><a href="#projects">Projets</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><Link to="/#profile">Profil</Link></li>
+                        <li><Link to="/#projects">Projets</Link></li>
+                        <li><Link to="/#contact">Contact</Link></li>
                     </ul>
-                    <button className="menu-icon" id="menuIcon" aria-label="Menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
+                    <MenuIcon isOpen={isMobileMenuOpen} onClick={toggleOpenMobileMenu}/>
                 </nav>
             </header>
             <main>
-                <MobileMenu/>
+                <MobileMenu isOpen={isMobileMenuOpen} onMenuClick={() => setIsMobileMenuOpen(false)}/>
                 <Outlet />
             </main>
         </>

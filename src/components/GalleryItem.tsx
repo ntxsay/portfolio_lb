@@ -1,4 +1,4 @@
-﻿import React from "react";
+﻿import React, {useState} from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faImage, faCircleInfo } from '@fortawesome/free-solid-svg-icons';
 
@@ -16,6 +16,7 @@ interface GalleryItemProp {
 
 const GalleryItem:React.FC<GalleryItemProp> = (props) => {
 
+    const [isTapped, setIsTapped] = useState<boolean>(false);
     let backgroundColorClass:string;
     switch (props.iconBackgroundColor) {
         case "default":
@@ -28,12 +29,17 @@ const GalleryItem:React.FC<GalleryItemProp> = (props) => {
             backgroundColorClass = "--default";
             break;
     }
+    
+    const toggleTapped = () => {
+        setIsTapped(!isTapped);
+        console.log(isTapped);
+    }
 
 
     return (
         <figure className="galleryItem">
-            <img src={props.imageFile} alt={props.imageAlt}/>
-            <div className="galleryItem__overlay">
+            <img src={props.imageFile} alt={props.imageAlt} onClick={toggleTapped}/>
+            <div className={`galleryItem__overlay ${isTapped ? "--tapped" : ""}`} onClick={toggleTapped}>
                 <div className={`galleryItem__overlay__logo ${backgroundColorClass}`}>
                     <img src={props.icon} alt={props.imageAlt}/>
                 </div>

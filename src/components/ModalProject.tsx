@@ -27,52 +27,47 @@ const ModalProject: React.FC<ModalProjectProp> = (props) => {
                     <FontAwesomeIcon icon={faXmark}/>
                 </button>
             </div>
-            <div className={"Modal__contentContainer"}>
-                <div className="Modal__content">
-                    <div className="Modal__content__imageContainer">
-                        <img src={props.project?.medias[0]} alt={props.project?.projectName}/>
+            <div className="Modal__content">
+                <div className="Modal__content__description">
+                    <div className="projectItemGroup projectStatus">
+                        <h3>Status :</h3>
+                        <span>{props.project?.status}</span>
                     </div>
-                    <div className="Modal__content__description">
-                        <div className="projectItemGroup projectStatus">
-                            <h3>Status :</h3>
-                            <span>{props.project?.status}</span>
-                        </div>
-                        <div className="projectItemGroup projectCategory">
-                            <h3>Type de projet :</h3>
-                            <span>{props.project?.category}</span>
-                        </div>
-                        <div className="projectItemGroup projectDescription">
-                            <h3>Description :</h3>
-                            <p>{props.project?.description}</p>
-                        </div>
-                        <div className="projectItemGroup projectFramework">
-                            <h3>Framework utilisé :</h3>
-                            <span>{props.project?.framework}</span>
-                        </div>
-                        <div className="projectItemGroup projectLanguages">
-                            <h3>Language(s) utilisé(s) :</h3>
-                            <ul>
-                                {props.project?.languages.map((language, index) => {
-                                    return <li key={index}>{language}</li>
-                                })}
-                            </ul>
-                        </div>
-                        <div className="projectItemGroup projectSupportedPlatforms">
-                            <h3>Plateforme(s) supportée(s) :</h3>
-                            <ul>
-                                {props.project?.supportedPlatforms.map((platform, index) => {
-                                    return <li key={index}>{platform}</li>
-                                })}
-                            </ul>
-                        </div>
-                        <div className="projectItemGroup projectLinks">
-                            <h3>Liens :</h3>
-                            <ul>
-                                {props.project?.links.map((link, index) => {
-                                    return <li key={index}><Link to={link.url}>{link.name}</Link></li>
-                                })}
-                            </ul>
-                        </div>
+                    <div className="projectItemGroup projectCategory">
+                        <h3>Type de projet :</h3>
+                        <span>{props.project?.category}</span>
+                    </div>
+                    <div className="projectItemGroup projectDescription">
+                        <h3>Description :</h3>
+                        <p>{props.project?.description}</p>
+                    </div>
+                    <div className="projectItemGroup projectFramework">
+                        <h3>Framework utilisé :</h3>
+                        <span>{props.project?.framework}</span>
+                    </div>
+                    <div className="projectItemGroup projectLanguages">
+                        <h3>Language(s) utilisé(s) :</h3>
+                        <ul>
+                            {props.project?.languages.map((language, index) => {
+                                return <li key={index}>{language}</li>
+                            })}
+                        </ul>
+                    </div>
+                    <div className="projectItemGroup projectSupportedPlatforms">
+                        <h3>Plateforme(s) supportée(s) :</h3>
+                        <ul>
+                            {props.project?.supportedPlatforms.map((platform, index) => {
+                                return <li key={index}>{platform}</li>
+                            })}
+                        </ul>
+                    </div>
+                    <div className="projectItemGroup projectLinks">
+                        <h3>Liens :</h3>
+                        <ul>
+                            {props.project?.links.map((link, index) => {
+                                return <li key={index}><Link to={link.url}>{link.name}</Link></li>
+                            })}
+                        </ul>
                     </div>
                 </div>
             </div>

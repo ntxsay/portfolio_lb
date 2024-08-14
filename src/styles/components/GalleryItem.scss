@@ -13,6 +13,10 @@
   @media (max-width: 768px) {
     width: 100%;
   }
+  
+  @media (min-width: 769px) and (max-width: 1440px) {
+    width: 45%;
+  }
 
 
   img {
@@ -36,7 +40,8 @@
     background-color: rgba(0, 0, 0, 0.7);
     transition: height 0.3s ease-in-out;
     
-    &:hover {
+    &:hover,
+    &.--tapped{
       height: 100%;
       transition: height 0.3s ease-in-out;
     }
