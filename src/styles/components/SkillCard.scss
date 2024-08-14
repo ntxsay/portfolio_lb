@@ -83,9 +83,9 @@
         justify-content: center;
         gap: 5px;
 
-        img {
+        img.skillTheme__skill__icon {
           height: 40px;
-          animation: float 2s ease-in-out infinite;
+          transition: all 0.3s ease-in-out;
         }
 
         span {
@@ -97,4 +97,17 @@
       }
     }
   }
+  
+  &:hover {
+    img.skillTheme__skill__icon {
+      animation: float 2s ease-in-out infinite;
+    }
+  }
+}
+
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
 }

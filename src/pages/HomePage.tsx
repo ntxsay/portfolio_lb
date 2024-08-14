@@ -1,8 +1,12 @@
 ﻿import skillJson from '../datas/skills.json'
 import SkillCard from "../components/SkillCard.tsx";
-import MasonryGallery from "../components/MasonryGallery.tsx";
+import Gallery from "../components/Gallery.tsx";
 import ContactForm from "../components/ContactForm.tsx";
 import {ISkillSchema} from "../interfaces/ISkillSchema.tsx";
+import { HashLink as Link } from 'react-router-hash-link';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faChevronDown} from "@fortawesome/free-solid-svg-icons";
+
 const HomePage = () => {
     return (
         <>
@@ -25,23 +29,23 @@ const HomePage = () => {
                             compétences en front-end et back-end, tout en approfondissant ma passion pour le
                             développement d'applications de bureau.</p>
                         <div className="landing__socialLinkContainer">
-                            <a href="https://github.com/ntxsay?tab=repositories" target="_blank"
+                            <Link to="https://github.com/ntxsay?tab=repositories" target="_blank"
                                className="landing__btn">
                                 <img src="src/assets/icons/github.svg" alt="Lien Github de Loïc Bastaraud"/>
-                            </a>
-                            <a href="https://www.linkedin.com/in/lo%C3%AFc-bastaraud-63448817b/" target="_blank"
+                            </Link>
+                            <Link to="https://www.linkedin.com/in/lo%C3%AFc-bastaraud-63448817b/" target="_blank"
                                className="landing__btn">
                                 <img src="src/assets/icons/317750_linkedin_icon.svg"
                                      alt="Lien Linkedin de Loïc Bastaraud"/>
-                            </a>
+                            </Link>
                         </div>
                         <div className="navButtonsContainer">
-                            <a href="#profile">
+                            <Link to="#profile">
                                 <span>En savoir plus</span><i className="fa-solid fa-chevron-down fa-bounce"></i>
-                            </a>
-                            <a href="#projects">
+                            </Link>
+                            <Link to="#projects">
                                 <span>Mes projets</span><i className="fa-solid fa-chevron-right fa-beat-fade"></i>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div className="imageContainer">
@@ -80,12 +84,9 @@ const HomePage = () => {
                         }
                     </div>
                     <div className="navButtonsContainer">
-                        <a href="#projects">
-                            <span>Mes projets</span><i className="fa-solid fa-chevron-down fa-bounce"></i>
-                        </a>
-                        <a href="#landing">
-                            <span>Revenir à l'accueil</span><i className="fa-solid fa-chevron-up fa-bounce"></i>
-                        </a>
+                        <Link to="/#projects">
+                            <span>Mes projets</span><FontAwesomeIcon icon={faChevronDown} />
+                        </Link>
                     </div>
                 </div>
             </section>
@@ -103,7 +104,7 @@ const HomePage = () => {
                         </div>
                         <h2>Découvez mes projets développés au fil des années !</h2>
                     </div>
-                    <MasonryGallery/>
+                    <Gallery/>
                 </div>
             </section>
             <section id="contact" className="documentSection contact__section">

@@ -29,17 +29,11 @@ const GalleryItem:React.FC<GalleryItemProp> = (props) => {
             backgroundColorClass = "--default";
             break;
     }
-    
-    const toggleTapped = () => {
-        setIsTapped(!isTapped);
-        console.log(isTapped);
-    }
-
 
     return (
         <figure className="galleryItem">
-            <img src={props.imageFile} alt={props.imageAlt} onClick={toggleTapped}/>
-            <div className={`galleryItem__overlay ${isTapped ? "--tapped" : ""}`} onClick={toggleTapped}>
+            <img src={props.imageFile} alt={props.imageAlt} onClick={() => setIsTapped(true)}/>
+            <div className={`galleryItem__overlay ${isTapped ? "--tapped" : ""}`} onClick={() => setIsTapped(false)}>
                 <div className={`galleryItem__overlay__logo ${backgroundColorClass}`}>
                     <img src={props.icon} alt={props.imageAlt}/>
                 </div>

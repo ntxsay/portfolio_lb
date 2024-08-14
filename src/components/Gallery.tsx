@@ -14,7 +14,7 @@ import ModalProject from "./ModalProject.tsx";
 
 ReactModal.setAppElement('#root');
 
-const MasonryGallery = () => {
+const Gallery = () => {
     
     const [activeProjectCategory, setActiveProjectCategory] = useState<string>("Tous");
     const [sortedProjects, setSortedProjects] = useState<IProjectSchema[]>(projects);
@@ -76,8 +76,8 @@ const MasonryGallery = () => {
     }
     
     return (
-        <div className="masonryGallery">
-            <div className="masonryGallery__tagContainer">
+        <div className="galleryContainer">
+            <div className="galleryContainer__tagContainer">
                 <TagButton imageFile={null} imageAlt={undefined}
                            text={"Tous"} isActive={activeProjectCategory === "Tous"} onTagClicked={() => onTagClicked("Tous")}/>
                 {
@@ -90,7 +90,7 @@ const MasonryGallery = () => {
                     })
                 }
             </div>
-            <div className="masonryGallery__container">
+            <div className="galleryContainer__container">
                 {
                     sortedProjects.map((project:IProjectSchema, index) => {
                         return <GalleryItem key={index} onMediasRequested={() => onMediasRequested(project.id)} onDescriptionRequested={() => onDescriptionRequested(project.id)} title={project.projectName} icon={`src/assets/icons/${project.icon}`} iconBackgroundColor={project.iconBackgroundColor} imageFile={project.medias[0]} imageAlt={project.projectName}
@@ -109,4 +109,4 @@ const MasonryGallery = () => {
     );
 }
 
-export default MasonryGallery;
+export default Gallery;

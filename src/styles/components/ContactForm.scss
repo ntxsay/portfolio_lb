@@ -49,7 +49,9 @@
     }
     
     textarea {
-      height: 120px;
+      min-height: 120px;
+      resize: vertical;
+      max-height: 350px;
     }
   }
 

@@ -20,7 +20,7 @@ const SkillCard: React.FC<SkillCardProps> = (prop) => {
                         return <li key={skillContainer.id}>
                             <div className="skillTheme__skill"
                                  data-tooltip={skillContainer.iconAlt}>
-                                <img src={`src/assets/icons/${skillContainer.icon}`}
+                                <img className="skillTheme__skill__icon" src={`src/assets/icons/${skillContainer.icon}`}
                                      alt={skillContainer.iconAlt}/>
                                 <span>{skillContainer.name}</span>
                             </div>
