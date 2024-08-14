@@ -40,7 +40,7 @@ const ContactForm = () => {
         const formData = new FormData(form);
         //const formData = new FormData(event.target as HTMLFormElement);
 
-        formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+        formData.append("access_key", "00e28f1c-8de5-4058-ad26-bc210f5d95fd");
 
         const object = Object.fromEntries(formData);
         const json = JSON.stringify(object);
