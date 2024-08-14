@@ -31,11 +31,11 @@ const HomePage = () => {
                         <div className="landing__socialLinkContainer">
                             <Link to="https://github.com/ntxsay?tab=repositories" target="_blank"
                                className="landing__btn">
-                                <img src="src/assets/icons/github.svg" alt="Lien Github de Loïc Bastaraud"/>
+                                <img src="public/icons/github.svg" alt="Lien Github de Loïc Bastaraud"/>
                             </Link>
                             <Link to="https://www.linkedin.com/in/lo%C3%AFc-bastaraud-63448817b/" target="_blank"
                                className="landing__btn">
-                                <img src="src/assets/icons/317750_linkedin_icon.svg"
+                                <img src="public/icons/317750_linkedin_icon.svg"
                                      alt="Lien Linkedin de Loïc Bastaraud"/>
                             </Link>
                         </div>
@@ -49,7 +49,7 @@ const HomePage = () => {
                         </div>
                     </div>
                     <div className="imageContainer">
-                        <img id="imgAppCsharp" className="landing__img" src="src/assets/projects/sitebuild.webp"
+                        <img id="imgAppCsharp" className="landing__img" src="public/projects/sitebuild.webp"
                              alt="Construction d'un site web"/>
                     </div>
                 </div>
