@@ -1,6 +1,7 @@
 ﻿import skillJson from '../datas/skills.json'
 import SkillCard from "../components/SkillCard.tsx";
 import MasonryGallery from "../components/MasonryGallery.tsx";
+import ContactForm from "../components/ContactForm.tsx";
 import {ISkillSchema} from "../interfaces/ISkillSchema.tsx";
 const HomePage = () => {
     return (
@@ -100,12 +101,27 @@ const HomePage = () => {
                             </h2>
                             <span className="code end">;</span>
                         </div>
-                        <h2>Découverte de la programmation</h2>
+                        <h2>Découvez mes projets développés au fil des années !</h2>
                     </div>
                     <MasonryGallery/>
                 </div>
             </section>
-            <section id="contact" className="documentSection">
+            <section id="contact" className="documentSection contact__section">
+                <div className="projects__content">
+                    <div className="section__titleContainer">
+                        <div className="codeTitleContainer">
+                            <span className="code type">let</span>
+                            <span className="code variableName">currentSection</span>
+                            <span className="code equals">=</span>
+                            <h2>
+                                <span className="code value">'Contact'</span>
+                            </h2>
+                            <span className="code end">;</span>
+                        </div>
+                        <h2>N’hésitez pas à me joindre par ce formulaire ou par <a href="mailto:loic.bastaraud@hotmail.fr">e-mail</a> !</h2>
+                    </div>
+                    <ContactForm/>
+                </div>
             </section>
         </>
     );

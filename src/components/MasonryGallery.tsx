@@ -28,6 +28,10 @@ const MasonryGallery = () => {
         setSortedProjects(category === "Tous"
             ? projects
             : projects.filter(x => x.category === category));
+
+        setTimeout(() => {
+            window.location.href = '#projects';
+        }, 100);
     }
     
     const onModalCloseRequested = () => {

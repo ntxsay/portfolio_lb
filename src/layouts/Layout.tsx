@@ -1,5 +1,6 @@
 ﻿import MobileMenu from "../components/MobileMenu";
-import {Link, Outlet} from 'react-router-dom';
+import {Outlet} from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import {useState} from "react";
 import MenuIcon from "../components/MenuIcon.tsx";
 const Layout = () => {
