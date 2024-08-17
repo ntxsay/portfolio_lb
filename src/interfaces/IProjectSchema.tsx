@@ -4,6 +4,7 @@
     category: string,
     status: string,
     description: string,
+    difficulty: IDifficultySchema,
     supportedPlatforms: string[],
     languages: string[],
     framework: string,
@@ -17,4 +18,9 @@
 interface IProjectLinkSchema {
     name: string,
     url: string
+}
+
+interface IDifficultySchema {
+    encountered: string,
+    solution: string
 }

@@ -4,7 +4,11 @@
     "projectName": "Projet Kasa",
     "category": "Développement web",
     "status": "Terminé",
-    "description": "Application web de gestion de location immobilière dans un cadre pédagogique.",
+    "description": "Développement d'une application web de gestion de location immobilière dans un cadre pédagogique.",
+    "difficulty": {
+      "encountered": "J'ai eu de la difficulté à utiliser les règles CSS pour la mise en forme de l'interface utilisateur.",
+      "solution": "J'ai recherché des ressources pour comprendre les règles CSS et les éléments HTML pour créer une interface utilisateur fluide et responsive."
+    },
     "supportedPlatforms": [
       "Chrome",
       "Firefox",
@@ -43,6 +47,10 @@
     "category": "Développement web",
     "status": "Terminé",
     "description": "Développement de la page d'accueil d'une agence de voyage dans un cadre pédagogique.",
+    "difficulty": {
+      "encountered": "J'ai eu de la difficulté à utiliser les règles CSS pour la mise en forme de l'interface utilisateur.",
+      "solution": "J'ai recherché des ressources pour comprendre les règles CSS et les éléments HTML pour créer une interface utilisateur fluide et responsive."
+    },
     "supportedPlatforms": [
       "Chrome",
       "Firefox",
@@ -78,7 +86,11 @@
     "projectName": "Projet Library",
     "category": "Développement logiciel",
     "status": "Terminé",
-    "description": "Application de gestion de bibliothèque de livres.",
+    "description": "Développement d'une application de gestion de bibliothèque de livres (création, modification, recherche, suivi des prêts).",
+    "difficulty": {
+      "encountered": "J'ai eu de la difficulté à connecter une base de données sqlite à l'application.",
+      "solution": "J'ai recherché et trouver le bon package pour la connexion à une base de données sqlite."
+    },
     "supportedPlatforms": [
       "Windows 10 version 2004 et supérieur"
     ],
@@ -94,23 +106,18 @@
       "projects/UWP/projectLibraty_2022.png",
       "projects/UWP/Rostaltheque_presentation_comp.mp4"
     ],
-    "links": [
-      {
-        "name": "Projet sur GitHub",
-        "url": "https://github.com/ntxsay/ProjetLibrary"
-      },
-      {
-        "name": "Projet sur CodePen",
-        "url": "https://codepen.io/ntxsay/pen/gOwoVv"
-      }
-    ]
+    "links": []
   },
   {
     "id": 4,
     "projectName": "Projet RCP",
     "category": "Développement logiciel",
     "status": "Terminé",
-    "description": "Application de gestion de paroles de chants.",
+    "description": "Développement d'une application de gestion de paroles de chants (création, modification, recherche).",
+    "difficulty": {
+      "encountered": "J'ai eu de la difficulté à maitriser certains concepts de base du langage XAML.",
+      "solution": "J'ai recherché des ressources pour comprendre les concepts de base du langage XAML."
+    },
     "supportedPlatforms": [
       "Windows 7 et supérieur"
     ],
@@ -134,7 +141,11 @@
     "projectName": "Projet H&L",
     "category": "Développement logiciel",
     "status": "Terminé",
-    "description": "Application de gestion de paroles de chants religieux.",
+    "description": "Développement d'une application de gestion de paroles de chants religieux (création, modification, recherche).",
+    "difficulty": {
+      "encountered": "J'ai eu de la difficulté à mettre en place des effets de styles avancées niveau de l'UI.",
+      "solution": "Windows Forms ne disposant pas d'un système de styles avancés niveau de l'UI, j'ai du réécrire le code vers WPF."
+    },
     "supportedPlatforms": [
       "Windows 7 et supérieur"
     ],
@@ -156,7 +167,11 @@
     "projectName": "Projets Avalonia",
     "category": "Développement logiciel",
     "status": "Terminé",
-    "description": "Création d'UI pour macOS",
+    "description": "Développement d'une UI dans le cadre d'une maquette pour macOS (barre de menu sous macOS).",
+    "difficulty": {
+      "encountered": "Bien qu'Avalonia utilise les concepts de base du WPF, j'ai eu de la difficulté à mettre en place certaines fonctionnalités comme par exemple la barre de menu sous macOS.",
+      "solution": "J'ai recherché des ressources pour comprendre certaines fonctionnalités d'Avalonia."
+    },
     "supportedPlatforms": [
       "Windows",
       "macOS",
@@ -182,6 +197,10 @@
     "category": "Développement logiciel",
     "status": "Terminé",
     "description": "Application web développée pour un centre de formation permettant au secrétariat/accueil de celle-ci de créer et gérer les fiches accueil lorsqu'elle reçoit une personne.",
+    "difficulty": {
+      "encountered": "J'ai eu de la difficulté à utiliser les règles CSS pour la mise en forme de l'interface utilisateur.",
+      "solution": "J'ai recherché des ressources pour comprendre les règles CSS et les éléments HTML pour créer une interface utilisateur fluide et responsive."
+    },
     "supportedPlatforms": [
       "Windows",
       "macOS",

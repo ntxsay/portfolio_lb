@@ -7,15 +7,12 @@ import {SlideImage} from "yet-another-react-lightbox/dist/types";
 import Lightbox from "yet-another-react-lightbox";
 import Video from "yet-another-react-lightbox/plugins/video";
 import "yet-another-react-lightbox/styles.css";
-import ReactModal from 'react-modal';
 
 import {useState} from "react";
 import ModalProject from "./ModalProject.tsx";
 
-ReactModal.setAppElement('#root');
-
 const Gallery = () => {
-    
+
     const [activeProjectCategory, setActiveProjectCategory] = useState<string>("Tous");
     const [sortedProjects, setSortedProjects] = useState<IProjectSchema[]>(projects);
     const [activeProject, setActiveProject] = useState<IProjectSchema | undefined>(undefined);
@@ -104,7 +101,7 @@ const Gallery = () => {
                 close={() => setOpenSlideshow(false)}
                 slides={medias}
             />
-            <ModalProject project={activeProject} onClose={onModalCloseRequested} isOpen={showModal}/>
+            <ModalProject project={activeProject} onClose={onModalCloseRequested} isOpen={activeProject !== null && showModal}/>
         </div>
     );
 }

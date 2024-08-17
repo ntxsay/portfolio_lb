@@ -5,7 +5,6 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faXmark} from '@fortawesome/free-solid-svg-icons';
 import {Link} from "react-router-dom";
 
-ReactModal.setAppElement('#root');
 
 interface ModalProjectProp {
     project: IProjectSchema | undefined
@@ -14,6 +13,9 @@ interface ModalProjectProp {
 }
 
 const ModalProject: React.FC<ModalProjectProp> = (props) => {
+    
+    ReactModal.setAppElement('#root');
+    
     return (
         <ReactModal
             isOpen={props.isOpen}
@@ -41,6 +43,14 @@ const ModalProject: React.FC<ModalProjectProp> = (props) => {
                         <h3>Description :</h3>
                         <p>{props.project?.description}</p>
                     </div>
+                    <div className="projectItemGroup projectDifficultyEncountered">
+                        <h3>Problèmes rencontrés :</h3>
+                        <p>{props.project?.difficulty.encountered}</p>
+                    </div>
+                    <div className="projectItemGroup projectDifficultySolution">
+                        <h3>Solutions proposées :</h3>
+                        <p>{props.project?.difficulty.solution}</p>
+                    </div>
                     <div className="projectItemGroup projectFramework">
                         <h3>Framework utilisé :</h3>
                         <span>{props.project?.framework}</span>
@@ -63,11 +73,16 @@ const ModalProject: React.FC<ModalProjectProp> = (props) => {
                     </div>
                     <div className="projectItemGroup projectLinks">
                         <h3>Liens :</h3>
-                        <ul>
-                            {props.project?.links.map((link, index) => {
-                                return <li key={index}><Link to={link.url}>{link.name}</Link></li>
-                            })}
-                        </ul>
+                        {
+                            props.project != undefined && props.project?.links.length > 0 ?
+                                <ul>
+                                    {props.project?.links.map((link, index) => {
+                                        return <li key={index}><Link to={link.url}>{link.name}</Link></li>
+                                    })}
+                                </ul>
+                                :
+                                <p>Aucun lien disponible pour le moment.</p>
+                        }
                     </div>
                 </div>
             </div>
