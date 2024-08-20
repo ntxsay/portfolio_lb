@@ -33,11 +33,7 @@
     "links": [
       {
         "name": "Projet sur GitHub",
-        "url": "https://github.com/ntxsay/ProjetLibrary"
-      },
-      {
-        "name": "Projet sur CodePen",
-        "url": "https://codepen.io/ntxsay/pen/gOwoVv"
+        "url": "https://github.com/ntxsay/reactKasaProjectTs"
       }
     ]
   },
@@ -73,11 +69,7 @@
     "links": [
       {
         "name": "Projet sur GitHub",
-        "url": "https://github.com/ntxsay/ProjetBooki"
-      },
-      {
-        "name": "Projet sur CodePen",
-        "url": "https://codepen.io/ntxsay/pen/gOwoVv"
+        "url": "https://github.com/ntxsay/booki-starter-code"
       }
     ]
   },
@@ -194,7 +186,7 @@
   {
     "id": 7,
     "projectName": "Projet ACP",
-    "category": "Développement logiciel",
+    "category": "Développement web",
     "status": "Terminé",
     "description": "Application web développée pour un centre de formation permettant au secrétariat/accueil de celle-ci de créer et gérer les fiches accueil lorsqu'elle reçoit une personne.",
     "difficulty": {
@@ -220,5 +212,79 @@
       "projects/Blazor/Blazor-floud.png"
     ],
     "links": []
+  },
+  {
+    "id": 8,
+    "projectName": "Projet Nina C.",
+    "category": "Développement web",
+    "status": "Terminé",
+    "description": "Dans le cadre du projet pédagogique Nina, j’ai optimisé le site web en me concentrant sur le référencement (SEO) et l’accessibilité.",
+    "difficulty": {
+      "encountered": "J'ai eu de la difficulté à utiliser les bonne couleurs pour améliorer le contraste.",
+      "solution": "J'ai recherché des outils en ligne pour visualiser les couleurs et les différentes combinaisons de couleurs pour créer des couleurs accessibles."
+    },
+    "supportedPlatforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "languages": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "framework": "Aucun",
+    "icon": "file-type-html.svg",
+    "iconAlt": "HTML 5",
+    "iconBackgroundColor": "white",
+    "medias": [
+      "projects/Web/nina_1.png",
+      "projects/Web/nina_2.png"
+    ],
+    "links": [
+      {
+        "name": "Projet GitHub (avant modification)",
+        "url": "https://github.com/ntxsay/Nina-Carducci-Dev-master-default"
+      },
+      {
+        "name": "Projet GitHub (après modification)",
+        "url": "https://github.com/ntxsay/Nina-Carducci-Dev-master"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "projectName": "Mon vieux grimoire",
+    "category": "Développement web",
+    "status": "Terminé",
+    "description": "Développement d'une API web pour le front-end d'un site de notation de livre.",
+    "difficulty": {
+      "encountered": "J'ai eu quelques difficultés à gérer les images des livres à mettre à jour.",
+      "solution": "J'ai cherché des ressources pour comprendre les bases de l'API FS de node.js"
+    },
+    "supportedPlatforms": [
+      "Toutes les plateformes"
+    ],
+    "languages": [
+      "JavaScript",
+      "NoSQL"
+    ],
+    "framework": "Node.js, Express, MongoDB",
+    "icon": "node-js.svg",
+    "iconAlt": "Node.js",
+    "iconBackgroundColor": "white",
+    "medias": [
+      "projects/NodeJs/backend_node_1.png",
+      "projects/NodeJs/backend_node_2.png",
+      "projects/NodeJs/backend_node_3.png",
+      "projects/NodeJs/backend_node_4.png",
+      "projects/NodeJs/backend_node_5.png"
+    ],
+    "links": [
+      {
+      "name": "Projet GitHub",
+      "url": "https://github.com/ntxsay/P6Backend"
+    }
+    ]
   }
 ]

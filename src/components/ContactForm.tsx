@@ -78,7 +78,7 @@ const ContactForm = () => {
                 <input className="form__input" type="email" name="email" id="email" placeholder="Votre email de contact"/>
             </div>
             <div className="form__inputContainer">
-                <label htmlFor="phone">Sujet</label>
+                <label htmlFor="subject">Sujet</label>
                 <input className="form__input" type="text" name="subject" id="subject" placeholder="Intitulé du sujet"/>
             </div>
             <div className="form__inputContainer">

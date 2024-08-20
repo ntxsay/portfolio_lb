@@ -32,10 +32,10 @@ const GalleryItem:React.FC<GalleryItemProp> = (props) => {
 
     return (
         <figure className="galleryItem">
-            <img src={props.imageFile} alt={props.imageAlt} onClick={() => setIsTapped(true)}/>
+            <img src={props.imageFile} alt={`Vignette du projet : ${props.imageAlt}`} onClick={() => setIsTapped(true)}/>
             <div className={`galleryItem__overlay ${isTapped ? "--tapped" : ""}`} onClick={() => setIsTapped(false)}>
                 <div className={`galleryItem__overlay__logo ${backgroundColorClass}`}>
-                    <img src={props.icon} alt={props.imageAlt}/>
+                    <img src={props.icon} alt={`icône du projet ${props.imageAlt}`}/>
                 </div>
                 <figcaption className="galleryItem__caption">{props.title}</figcaption>
                 <div className="galleryItem__buttonContainer">

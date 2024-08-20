@@ -25,7 +25,7 @@ const ModalProject: React.FC<ModalProjectProp> = (props) => {
             overlayClassName="Overlay">
             <div className="Modal__titleBar">
                 <h2>{props.project?.projectName}</h2>
-                <button className={"Modal__closeButton"} onClick={props.onClose}>
+                <button className={"Modal__closeButton"} onClick={props.onClose} aria-hidden="true" aria-label="Fermer">
                     <FontAwesomeIcon icon={faXmark}/>
                 </button>
             </div>
@@ -48,7 +48,7 @@ const ModalProject: React.FC<ModalProjectProp> = (props) => {
                         <p>{props.project?.difficulty.encountered}</p>
                     </div>
                     <div className="projectItemGroup projectDifficultySolution">
-                        <h3>Solutions proposées :</h3>
+                        <h3>Solution mise en place :</h3>
                         <p>{props.project?.difficulty.solution}</p>
                     </div>
                     <div className="projectItemGroup projectFramework">

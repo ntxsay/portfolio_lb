@@ -4,8 +4,6 @@ import Gallery from "../components/Gallery.tsx";
 import ContactForm from "../components/ContactForm.tsx";
 import {ISkillSchema} from "../interfaces/ISkillSchema.tsx";
 import { HashLink as Link } from 'react-router-hash-link';
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faChevronDown} from "@fortawesome/free-solid-svg-icons";
 
 const HomePage = () => {
     return (
@@ -84,9 +82,7 @@ const HomePage = () => {
                         }
                     </div>
                     <div className="navButtonsContainer">
-                        <Link to="/#projects">
-                            <span>Mes projets</span><FontAwesomeIcon icon={faChevronDown} />
-                        </Link>
+                        
                     </div>
                 </div>
             </section>

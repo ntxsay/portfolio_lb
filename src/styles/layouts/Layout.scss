@@ -4,12 +4,21 @@
 
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
+#root {
+  max-width: 1920px;
+}
+  
 header {
   position: fixed;
   top: 0;
   width: calc(100% - 40px);
+  max-width: calc(1920px - 40px);
   padding: 0 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -39,7 +48,7 @@ header {
       font-family: Montserrat, sans-serif;
       font-size: 20px;
       font-weight: normal;
-      color: rgb(134, 142, 150);
+      color: #687078;
       text-decoration: none;
     }
   }
@@ -107,7 +116,7 @@ header {
 }
 
 .documentSection__description {
-  color: rgb(134, 142, 150);
+  color: #687078;
   margin: 0;
   font-family: Montserrat, sans-serif;
   font-weight: normal;

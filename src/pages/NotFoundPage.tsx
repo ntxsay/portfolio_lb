@@ -28,7 +28,7 @@ const NotFoundPage = () => {
                     </div>
                 </div>
                 <div className="imageContainer">
-                    <img id="imgAppCsharp" className="landing__img" src="/src/assets/projects/sitebuild.webp"
+                    <img id="imgAppCsharp" className="landing__img" src="/projects/sitebuild.webp"
                          alt="Construction d'un site web"/>
                 </div>
             </div>

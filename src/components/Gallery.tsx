@@ -47,11 +47,11 @@ const Gallery = () => {
         const project:IProjectSchema | undefined = projects.find((project:IProjectSchema) => project.id === id);
         
         if (project !== undefined) {
-            setMedias(project.medias.map((media:string) => {
+            setMedias(project.medias.map((media:string, index:number) => {
                 const isVideo = media.endsWith(".mp4");
                 const slideImage: SlideImage = {
                     type: !isVideo ? "image" : "video",
-                    alt: 'Image du projet : ' + project.projectName,
+                    alt: project.projectName + '_' + index,
                 };
                 
                 if (isVideo) {

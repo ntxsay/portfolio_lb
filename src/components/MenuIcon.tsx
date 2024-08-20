@@ -7,11 +7,11 @@ interface MenuIconProp {
 
 const MenuIcon: React.FC<MenuIconProp> = (props) => {
     return (
-        <button className={`menu-icon ${props.isOpen ? "active" : ""}`} onClick={props.onClick}>
+        <div className={`menu-icon ${props.isOpen ? "active" : ""}`} onClick={props.onClick}>
             <span></span>
             <span></span>
             <span></span>
-        </button>
+        </div>
     );
 }
 
