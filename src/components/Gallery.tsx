@@ -24,7 +24,10 @@ const Gallery = () => {
         setActiveProjectCategory(category);
         setSortedProjects(category === "Tous"
             ? projects
-            : projects.filter(x => x.category === category));
+                .sort((a, b) => b.releaseDate.localeCompare(a.releaseDate))
+            : projects
+                .sort((a, b) => b.releaseDate.localeCompare(a.releaseDate))
+                .filter(x => x.category === category));
 
         setTimeout(() => {
             window.location.href = '#projects';

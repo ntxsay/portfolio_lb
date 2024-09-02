@@ -1,6 +1,7 @@
 ﻿[
   {
     "id": 1,
+    "releaseDate": "2024-06-17",
     "projectName": "Projet Kasa",
     "category": "Développement web",
     "status": "Terminé",
@@ -39,6 +40,7 @@
   },
   {
     "id": 2,
+    "releaseDate": "2024-04-17",
     "projectName": "Projet Booki",
     "category": "Développement web",
     "status": "Terminé",
@@ -75,6 +77,7 @@
   },
   {
     "id": 3,
+    "releaseDate": "2022-10-01",
     "projectName": "Projet Library",
     "category": "Développement logiciel",
     "status": "Terminé",
@@ -102,6 +105,7 @@
   },
   {
     "id": 4,
+    "releaseDate": "2017-10-04",
     "projectName": "Projet RCP",
     "category": "Développement logiciel",
     "status": "Terminé",
@@ -130,6 +134,7 @@
   },
   {
     "id": 5,
+    "releaseDate": "2016-12-28",
     "projectName": "Projet H&L",
     "category": "Développement logiciel",
     "status": "Terminé",
@@ -156,6 +161,7 @@
   },
   {
     "id": 6,
+    "releaseDate": "2021-09-01",
     "projectName": "Projets Avalonia",
     "category": "Développement logiciel",
     "status": "Terminé",
@@ -185,6 +191,7 @@
   },
   {
     "id": 7,
+    "releaseDate": "2020-09-01",
     "projectName": "Projet ACP",
     "category": "Développement web",
     "status": "Terminé",
@@ -215,6 +222,7 @@
   },
   {
     "id": 8,
+    "releaseDate": "2024-05-21",
     "projectName": "Projet Nina C.",
     "category": "Développement web",
     "status": "Terminé",
@@ -254,6 +262,7 @@
   },
   {
     "id": 9,
+    "releaseDate": "2024-06-27",
     "projectName": "Mon vieux grimoire",
     "category": "Développement web",
     "status": "Terminé",

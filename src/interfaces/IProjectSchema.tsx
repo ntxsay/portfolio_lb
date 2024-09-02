@@ -1,5 +1,6 @@
 ﻿export interface IProjectSchema {
     id: number,
+    releaseDate: string,
     projectName: string,
     category: string,
     status: string,
