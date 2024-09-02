@@ -48,6 +48,12 @@
         "name": "MongoDB",
         "icon": "mongodb-original-wordmark.svg",
         "iconAlt": "Compétence : création de bases de données avec MongoDB"
+      },
+      {
+        "id": 8,
+        "name": "ASP.NET Core",
+        "icon": "NET_Core_Logo.svg",
+        "iconAlt": "Compétence : création d'application Web API avec ASP.NET Core et C#"
       }
     ]
   },
@@ -94,12 +100,6 @@
         "name": ".NET MAUI",
         "icon": "maui.webp",
         "iconAlt": "Compétence : création d'applications de bureau avec .NET MAUI et C#"
-      },
-      {
-        "id": 7,
-        "name": "ASP.NET Core",
-        "icon": "NET_Core_Logo.svg",
-        "iconAlt": "Compétence : création d'application Web API avec ASP.NET Core et C#"
       }
     ]
   },
