@@ -14,7 +14,7 @@ import ModalProject from "./ModalProject.tsx";
 const Gallery = () => {
 
     const [activeProjectCategory, setActiveProjectCategory] = useState<string>("Tous");
-    const [sortedProjects, setSortedProjects] = useState<IProjectSchema[]>(projects);
+    const [sortedProjects, setSortedProjects] = useState<IProjectSchema[]>(projects.sort((a, b) => b.releaseDate.localeCompare(a.releaseDate)));
     const [activeProject, setActiveProject] = useState<IProjectSchema | undefined>(undefined);
     const [openSlideshow, setOpenSlideshow] = useState(false);
     const [medias, setMedias] = useState<SlideImage[]>([]);
