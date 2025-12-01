@@ -115,7 +115,7 @@ const HomePage = () => {
                             </h2>
                             <span className="code end">;</span>
                         </div>
-                        <h2>N’hésitez pas à me joindre par ce formulaire ou par <a href="mailto:loic.bastaraud@hotmail.fr">e-mail</a> !<br/>Vous pouvez également télécharger mon CV <a href={"documents/CV_DotNet_loic_bastaraud.pdf"}>ici</a>.</h2>
+                        <h2>N’hésitez pas à me joindre par ce formulaire ou par <a href="mailto:loic.bastaraud@hotmail.fr">e-mail</a> !<br/>Vous pouvez également télécharger mon CV <a href={"documents/CV_DotNet_122025_Loic_Bastaraud.pdf"}>ici</a>.</h2>
                     </div>
                     <ContactForm/>
                 </div>
